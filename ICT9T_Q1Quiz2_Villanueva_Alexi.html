@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best Animated Movie Ever!</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
+	<style>
+
+		.amita-regular {
+		  	font-family: "Amita", serif;
+		  	font-weight: 400;
+		  	font-style: normal;
+		}
+
+		.amita-bold {
+		  	font-family: "Amita", serif;
+		  	font-weight: 700;
+		  	font-style: normal;
+		}
+
+		.plus-jakarta-sans-<uniquifier> {
+			font-family: "Plus Jakarta Sans", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: <weight>;
+			font-style: normal;
+		}
+
+		.lugrasimo-regular {
+  			font-family: "Lugrasimo", cursive;
+ 			font-weight: 400;
+  			font-style: normal;
+}
+
+
+		.MainPoster {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 0px 0px 6px rgba(5, 5, 5, 5);
+		}
+		.container {
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		p {
+			max-width: 400px;
+			margin: 0 auto;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.Howl, .Sophie, .Calcifer, .Markl, .Witch, .Turnip {
+			border-radius: 25px;
+			box-shadow: 0px 0px 6px rgba(5, 5, 5, 5)
+		}
+
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: center;
+			column-gap: 20px;
+			row-gap: 60px;
+		}
+
+		.image-grid {
+			text-align: center;
+			padding: 10px;
+		}
+		.image-item p {
+    		margin-top: 10px;
+    		font-size: 16px;
+    		color: #4b7b94;
+		}
+		.image-item p a {
+   			text-decoration: underline;
+    		color: #4b7b94;
+    		font-family: "Amita", serif;
+    		font-weight: bold;
+    		font-size: 18px;
+    	}
+    	.image-item ul {
+    		font-family: "Plus Jakarta Sans", sans-serif;
+    		color: #263947;
+    		font-size: 15px;
+    		list-style-type: square;
+    		margin: 10px 0 0 0;
+    		padding: 0;
+    		text-align: left;
+    		display: inline-block;
+    		margin-top: 5px;
+    	}
+    	.image-item li {
+    		margin: 3px 20px;
+    	}
+    	.image-item ul a {
+    		text-decoration: none;
+    		color: #455c75;
+    	}
+
+    	.centered-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .centered-list {
+            display: inline-block;
+            text-align: left;
+            margin: 0; 
+            padding: 2px;
+        }
+
+        .centered-list li {
+            margin: 30px 0;
+            font-family: "Plus Jakarta Sans", sans-serif;
+            color: #455c75;
+            font-weight: bold;
+            font-size: 17px;
+            padding-left: 30px;        
+        }
+
+        .centered-list li::marker {
+        	color: #403226;
+        }
+
+        .sbmtd {
+        	text-align: center;
+        	opacity: 60%;
+        }
+
+       .container1 {
+			font-family: "Plus Jakarta Sans", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			color: #374036;
+			background-color: rgba(43, 64, 41, .6);
+			width: 850px;
+			padding: 25px;
+			margin: auto;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			border-radius: 4px;
+			text-align: center;
+			font-size: 20px;
+		}
+
+		label {
+			color: white; 
+			font-family: "Plus Jakarta Sans", sans-serif;
+			font-style: normal;
+			text-shadow: 0px 0px 10px rgba(5, 5, 5, 1.0);
+			display: inline-block;
+			padding-bottom: 5px;
+			margin-bottom: 20px;
+			position: relative;
+		}
+
+		label::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200%;
+			height: 2px;
+			background-color: #ffffff;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		#reco {
+			color: #20291f; 
+			font-family: "Plus Jakarta Sans", sans-serif; 
+			font-style: normal;
+			font-size: 17px;
+		}
+
+		#recosub, #comment {
+			color: #20291f; 
+			font-family: "Plus Jakarta Sans", sans-serif; 
+			font-style: normal;
+			font-size: 16px;
+		}
+		
+		#movies {
+			color: #20291f; 
+			font-family: "Plus Jakarta Sans", sans-serif; 
+			font-style: normal;
+			font-size: 14px;
+		}
+
+		select {
+			color: #20291f; 
+			font-family: "Plus Jakarta Sans", sans-serif; 
+			font-style: normal;
+			border-radius: 5px;
+		}
+
+		textarea {
+			font-family: "Plus Jakarta Sans", sans-serif; 
+			font-style: normal;
+			color: #20291f;
+			border-radius: 5px;
+		}
+
+		body {
+			background-image: url('backgimage.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			border-radius: 5px;
+		}
+
+		#reco {
+			border-radius: 3px;
+			border-width: 1px;
+			cursor: text;
+		}	
+
+		#movies {
+			border-radius: 3px;
+			border-width: 1px;
+			cursor: pointer;
+		}	
+
+		#recosub, #comment {
+			border-radius: 3px;
+			border-width: 1px;
+			cursor: pointer;
+		}		
+
+	</style>
+</head>
+<body style="background-color: floralwhite;">
+	<h1 style="text-align: center; font-family: Lugarismo, cursive; text-shadow: 0px 0px 5px rgba(5, 5, 5, 5); color: floralwhite; background-color: #3a91bd; border-radius: 10px;" class="1hdr">
+			⋆⁺₊⋆ Howl's Moving Castle ⋆⁺₊⋆
+	</h1>
+		<a href="https://i.ebayimg.com/images/g/h9oAAOSw0BJgHam1/s-l1200.jpg" target="_blank">
+			<img src="https://i.ebayimg.com/images/g/h9oAAOSw0BJgHam1/s-l1200.jpg" height="340" width="271" class="MainPoster" style="border-radius: 2px;">
+		</a>
+	
+	<div class="container">
+
+		<p style="text-align: center; font-family: Plus Jakarta Sans, sans-serif; color: #244252;">
+			When a shy, timid, and young woman named <em>Sophie</em> is cursed and transformed into an old lady by an evil witch, her only hope to lift the curse depends on a self-centered yet insecure wizard named <em>Howl</em>, along with his companions, whom live in the castle which walks on legs.
+		</p>
+
+	</div>
+
+<br>
+
+	<h2 style="text-align: center; font-family: Lugarismo, cursive; text-shadow: 0px 0px 5px rgba(5, 5, 5, 5); color: 
+		floralwhite; background-color: #735b47; border-radius: 10px;">
+		˚₊‧ Characters ‧₊˚
+	</h2>
+
+<br>
+
+	<div class="image-grid">
+		<div class="image-item">
+			<a href="https://static.wikia.nocookie.net/p__/images/9/9b/249422.jpg/revision/latest/scale-to-width-down/1200?cb=20150703230804&path-prefix=protagonist" target="_blank">
+				<img src="https://static.wikia.nocookie.net/p__/images/9/9b/249422.jpg/revision/latest/scale-to-width-down/1200?cb=20150703230804&path-prefix=protagonist" alt="Wizard Howl" height="220" width="190" class="Howl">
+			</a>
+			<p>
+				<a href="https://howlscastle.fandom.com/wiki/Howl_Jenkins_Pendragon" target="_blank">
+					Wizard Howl
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>Howl</em>, a 27 year old wizard, is the male protagonist whom lives in a walking house accompanied by Calcifer and Markl. He has a bad reputation despite being a kind person when known better. He is the lover of Sophie and her savior; he is also the ex-lover of the Witch of the West.
+				</li>
+			</ul>
+		</div>
+
+		<div class="image-item">
+			<a href="https://static.wixstatic.com/media/9149f5_aa11e834f8414de8ad79ff56467b4a42~mv2.png/v1/fill/w_372,h_441,al_c,lg_1,q_85/9149f5_aa11e834f8414de8ad79ff56467b4a42~mv2.png" target="_blank">
+				<img src="https://static.wixstatic.com/media/9149f5_aa11e834f8414de8ad79ff56467b4a42~mv2.png/v1/fill/w_372,h_441,al_c,lg_1,q_85/9149f5_aa11e834f8414de8ad79ff56467b4a42~mv2.png" alt="Sophie Hatter" height="220" width="190" class="Sophie">
+			</a>
+			<p>
+				<a href="https://howlscastle.fandom.com/wiki/Sophie_Hatter" target="_blank">
+					Sophie Hatter
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>Sophie Hatter</em>, an 18 year old girl turned 90 by a witch, is the female protagonist who ventures on a journey with Howl and the moving castle to lift her curse. She is a kind, strong-willed, and considerate person who was taken in by Howl to live at his home.
+				</li>
+			</ul>
+		</div>
+
+		<div class="image-item">
+			<a href="https://static.wikia.nocookie.net/studio-ghibli/images/2/2a/Calcifer.png/revision/latest?cb=20110705204516" target="_blank">
+				<img src="https://static.wikia.nocookie.net/studio-ghibli/images/2/2a/Calcifer.png/revision/latest?cb=20110705204516" alt="Calcifer" height="220" width="190" class="Calcifer">
+			</a>
+			<p>
+				<a href="https://howlscastle.fandom.com/wiki/Calcifer" target="_blank">
+					Calcifer
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>Calcifer</em>, a fire demon which lives in Howl's house, is the main power source of the castle and is bound to the hearth. Initially, he seems hostile but later on he warms up to Sophie.
+				</li>
+			</ul>
+		</div>
+
+		<div class="image-item">
+			<a href="https://pm1.aminoapps.com/7900/744ae7c251d3d3d5e87055be03ac6bac7e849744r1-457-432v2_00.jpg" target="_blank">
+				<img src="https://pm1.aminoapps.com/7900/744ae7c251d3d3d5e87055be03ac6bac7e849744r1-457-432v2_00.jpg" alt="Markl" height="220" width="190" class="Markl">
+			</a>
+			<p>
+				<a href="https://howlscastle.fandom.com/wiki/Markl" target="_blank">
+					Markl
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>Markl</em>, a 15 year old orphan, is Howl's apprentice and manages Howl's business and affairs when away.
+				</li>
+			</ul>
+		</div>
+
+		<div class="image-item">
+			<a href="https://spiritedcastles.files.wordpress.com/2014/04/witch03.jpg" target="_blank">
+				<img src="https://spiritedcastles.files.wordpress.com/2014/04/witch03.jpg" alt="Witch of the Waste" height="220" width="190" class="Witch">
+			</a>
+			<p>
+				<a href="https://howlscastle.fandom.com/wiki/Witch_of_the_Waste" target="_blank">
+					Witch of the Waste
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>The Witch of the Waste</em>, a talented witch with powers that keep her youthful looking, is the main antagonist of the story. She is Howl's ex-lover and the one who cursed Sophie out of jealousy of her youth.
+				</li>
+			</ul>
+		</div>
+
+		<div class="image-item">
+			<a href="https://i.pinimg.com/474x/85/29/ae/8529aedb2ebc13c76631cbbe709ab143.jpg" target="_blank">
+				<img src="https://i.pinimg.com/474x/85/29/ae/8529aedb2ebc13c76631cbbe709ab143.jpg" alt="Turnip Head" height="220" width="190" class="Turnip">
+			</a>
+			<p>
+				<a href="https://ghibli.fandom.com/wiki/Turnip_Head" target="_blank">
+					Turnip Head
+				</a>
+			</p>
+			<ul>
+				<li>
+					<em>Turnip head</em>, formally known as Prince Justin, was rescued by Sophie in the wasteland. He would later on transform back into his princely state and confess that Sophie was his true love.
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<br>
+
+	<h2 style="text-align: center; font-family: Lugarismo, cursive; text-shadow: 0px 0px 5px rgba(5, 5, 5, 5); color: 
+		floralwhite; background-color: #5f6e4c ; border-radius: 10px;">
+		Thoughts & Movie Recommendations
+	</h2>
+
+<br>
+
+<div class="container1">
+	<form>
+	<label for="review">Share your thoughts on Howl's Moving Castle</label>
+	<br>
+	<textarea rows="8" cols="60" placeholder="Type here..."></textarea>
+	<br>
+
+	<input type="submit" id="comment" name="comment" value="Comment">
+	<br><br>
+
+	<label for="movies">Movie Recommendations</label>
+	<br>
+	<select id="movies">
+		<option value="movies">Choose here</option>
+		<option value="movies">Grave of the Fireflies (April 16, 1988)</option>
+		<option value="movies">Whisper of the Heart (July 15, 1995)</option>
+		<option value="movies">The Cat Returns (July 20, 2002)</option>
+	</select>
+	<br><br>
+
+	<label for="reco">Got a Recommendation?</label>
+	<br>
+	<input type="text" name="reco" id="reco" placeholder="Type here...">
+	<br><br>
+	<input type="submit" id="recosub" name="recosub" value="Add Recommendation">
+	<br>
+	</form>
+</div>
+
+<br>
+<br>
+<br>
+
+	<p><span style=" color: #5c4b3c; font-family: Amita, serif; font-size: 19px;" class="sbmtd">
+		-~ ✧˖° Submitted by °˖✧ ~-<br>Alexi Villanueva 
+	</span></p>
+
+</body>
+</html>
